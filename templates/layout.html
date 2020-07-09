@@ -2,9 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Flask Contact Form</title>
+        <title>
+            {% block page_title %}
+            {% endblock page_title %}
+        </title>
     </head>
     <body>
+        {% block game_title %}
+        {% endblock game_title %}
+
+        {% block content %}
+        {% endblock content %}
+
         {% block contact_form %}
         {% endblock contact_form %}
 
